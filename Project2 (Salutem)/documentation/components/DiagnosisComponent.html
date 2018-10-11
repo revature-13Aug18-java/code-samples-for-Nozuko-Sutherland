@@ -1,0 +1,1043 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>angular-salutem documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">angular-salutem documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search">
+</div>
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>DiagnosisComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/diagnosis/diagnosis.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-diagnosis</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>diagnosis.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./diagnosis.component.html</code></td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#age">age</a>
+                            </li>
+                            <li>
+                                <a href="#currentAccountId">currentAccountId</a>
+                            </li>
+                            <li>
+                                <a href="#diagnoses">diagnoses</a>
+                            </li>
+                            <li>
+                                <a href="#gender">gender</a>
+                            </li>
+                            <li>
+                                <a href="#id">id</a>
+                            </li>
+                            <li>
+                                <a href="#isClicked">isClicked</a>
+                            </li>
+                            <li>
+                                <a href="#objectkeys">objectkeys</a>
+                            </li>
+                            <li>
+                                <a href="#symptomId">symptomId</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#changeClicked">changeClicked</a>
+                            </li>
+                            <li>
+                                <a href="#getDiagnoses">getDiagnoses</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#saveArray">saveArray</a>
+                            </li>
+                            <li>
+                                <a href="#saveDiagnosis">saveDiagnosis</a>
+                            </li>
+                            <li>
+                                <a href="#useAccount">useAccount</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(http: <a href="https://angular.io/api/common/http/HttpClient" target="_blank">HttpClient</a>, healthResultService: <a href="../injectables/HealthResultService.html">HealthResultService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/diagnosis/diagnosis.component.ts:14</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>http</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="https://angular.io/api/common/http/HttpClient" target="_blank" >HttpClient</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>healthResultService</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="../injectables/HealthResultService.html" target="_self" >HealthResultService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+        <h3 id="methods">
+            Methods
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="changeClicked"></a>
+                        <span class="name">
+                            <b>
+                            changeClicked
+                            </b>
+                            <a href="#changeClicked"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>changeClicked()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">src/app/diagnosis/diagnosis.component.ts:53</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="getDiagnoses"></a>
+                        <span class="name">
+                            <b>
+                            getDiagnoses
+                            </b>
+                            <a href="#getDiagnoses"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>getDiagnoses()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/diagnosis/diagnosis.component.ts:37</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ngOnInit"></a>
+                        <span class="name">
+                            <b>
+                            ngOnInit
+                            </b>
+                            <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>ngOnInit()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/diagnosis/diagnosis.component.ts:18</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="saveArray"></a>
+                        <span class="name">
+                            <b>
+                            saveArray
+                            </b>
+                            <a href="#saveArray"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>saveArray(issueId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="66" class="link-to-prism">src/app/diagnosis/diagnosis.component.ts:66</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>issueId</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="../classes/Submission.html" target="_self" >Observable&lt;Submission&gt;</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="saveDiagnosis"></a>
+                        <span class="name">
+                            <b>
+                            saveDiagnosis
+                            </b>
+                            <a href="#saveDiagnosis"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>saveDiagnosis()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="57" class="link-to-prism">src/app/diagnosis/diagnosis.component.ts:57</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="useAccount"></a>
+                        <span class="name">
+                            <b>
+                            useAccount
+                            </b>
+                            <a href="#useAccount"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>useAccount()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="79" class="link-to-prism">src/app/diagnosis/diagnosis.component.ts:79</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="age"></a>
+                        <span class="name">
+                            <b>
+                            age
+                            </b>
+                            <a href="#age"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>age:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/diagnosis/diagnosis.component.ts:31</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="currentAccountId"></a>
+                        <span class="name">
+                            <b>
+                            currentAccountId
+                            </b>
+                            <a href="#currentAccountId"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>currentAccountId:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/diagnosis/diagnosis.component.ts:34</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="diagnoses"></a>
+                        <span class="name">
+                            <b>
+                            diagnoses
+                            </b>
+                            <a href="#diagnoses"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>diagnoses:     <code><a href="../classes/Diagnosis.html" target="_self" >Diagnosis[]</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="../classes/Diagnosis.html" target="_self" >Diagnosis[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/diagnosis/diagnosis.component.ts:24</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="gender"></a>
+                        <span class="name">
+                            <b>
+                            gender
+                            </b>
+                            <a href="#gender"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>gender:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/diagnosis/diagnosis.component.ts:30</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="id"></a>
+                        <span class="name">
+                            <b>
+                            id
+                            </b>
+                            <a href="#id"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>id:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/diagnosis/diagnosis.component.ts:28</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isClicked"></a>
+                        <span class="name">
+                            <b>
+                            isClicked
+                            </b>
+                            <a href="#isClicked"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>isClicked:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/diagnosis/diagnosis.component.ts:22</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="objectkeys"></a>
+                        <span class="name">
+                            <b>
+                            objectkeys
+                            </b>
+                            <a href="#objectkeys"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>objectkeys:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>Object.keys</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/diagnosis/diagnosis.component.ts:27</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="symptomId"></a>
+                        <span class="name">
+                            <b>
+                            symptomId
+                            </b>
+                            <a href="#symptomId"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>symptomId:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/diagnosis/diagnosis.component.ts:29</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { HealthResultService } from &#x27;../services/health-result.service&#x27;;
+import { Diagnosis } from &#x27;../diagnosis&#x27;;
+import { Issue} from &#x27;../diagnosis&#x27;;
+import { HttpClient, HttpHeaders } from &#x27;@angular/common/http&#x27;;
+import { Submission } from &#x27;../submission&#x27;;
+import { Account } from &#x27;../account&#x27;;
+import { Observable } from &#x27;rxjs&#x27;;
+@Component({
+  selector: &#x27;app-diagnosis&#x27;,
+  templateUrl: &#x27;./diagnosis.component.html&#x27;,
+  styleUrls: [&#x27;./diagnosis.component.css&#x27;]
+})
+export class DiagnosisComponent implements OnInit {
+
+  constructor(private http: HttpClient, private healthResultService: HealthResultService) { }
+
+  ngOnInit() {
+    this.useAccount();
+  }
+
+  isClicked: boolean &#x3D; false;
+
+  diagnoses: Diagnosis[] &#x3D; [];
+  
+  //specialisations: Spec[] &#x3D; [];
+  objectkeys &#x3D; Object.keys;
+  id: string;
+  symptomId: number;
+  gender: string;
+  age: number;
+
+  //account variable
+  currentAccountId: number;
+
+
+  getDiagnoses(){
+    // this.symptomId &#x3D; parseInt(localStorage.getItem(&quot;sympId&quot;));
+    // this.gender &#x3D; localStorage.getItem(&quot;CurrentGender&quot;);
+    // this.age &#x3D; parseInt(localStorage.getItem(&quot;CurrentDateBirth&quot;)); // birth year
+    this.changeClicked();
+    //console.log(Diagnosis);
+    this.healthResultService.loadDiagnosis(this.id, this.gender, this.age).subscribe((allDiagnoses) &#x3D;&gt; {
+      this.diagnoses &#x3D; allDiagnoses;
+
+      
+      // this.saveArray(allDiagnoses);
+    });
+    //this.healthResultService.loadDiagnosis(this.id, this.gender, this.age).subscribe((allSpecialisations) &#x3D;&gt; {this.specialisations &#x3D; allSpecialisations});
+  
+  }
+
+  changeClicked(){
+    this.isClicked &#x3D; !this.isClicked;
+  }
+
+  saveDiagnosis(){
+    for (let entry of this.diagnoses) {
+      console.log(entry.Issue.ID); // 1, &quot;string&quot;, false
+      this.saveArray(entry.Issue.ID);
+    }
+    
+  }
+
+
+  saveArray(issueId: number):Observable&lt;Submission&gt;{
+    let accepted &#x3D; this.http.put&lt;Submission&gt;(&#x27;http://salutem.us-east-2.elasticbeanstalk.com/submissions&#x27;,
+      // { &quot;accountId&quot;: 1, &quot;symptomId&quot;: 10, &quot;submissionDate&quot;: &quot;2017-04-02&quot; }
+    JSON.parse(&#x60;{ &quot;accountId&quot; : ${this.currentAccountId}, &quot;symptomId&quot; : ${issueId}, &quot;submissionDate&quot;:&quot;2018-01-02&quot;}&#x60;), {
+        headers: new HttpHeaders({
+          &#x27;Content-Type&#x27;: &#x27;application/json&#x27;
+        })
+      }); // no error handling rn
+    // console.log(issueId);
+    console.log(&#x60;{ &quot;accountId&quot; : ${this.currentAccountId}, &quot;symptomId&quot; : ${issueId}, &quot;submissionDate&quot;:&quot;2018-01-02&quot;}&#x60;);
+    return accepted;
+  }
+
+useAccount(){
+  var currentAccount: any&#x3D; Account;
+  currentAccount &#x3D; JSON.parse(localStorage.getItem(&quot;signedInAccount&quot;));
+  console.log(currentAccount);
+  this.currentAccountId&#x3D;currentAccount.accountId;
+  console.log(this.currentAccountId)
+  // localStorage.getItem(&quot;signedInAccount&quot;)
+}
+
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;app-nav&gt;&lt;/app-nav&gt;
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;div class&#x3D;&quot;container&quot;&gt;
+
+  &lt;h4&gt;Here is a rundown of some of the issues you may be having...&lt;/h4&gt;
+    &lt;div class&#x3D;&quot;jumbotron&quot; id&#x3D;&quot;diagnosis&quot;&gt;
+
+      &lt;!-- &lt;input class&#x3D;&quot;form-control&quot; placeholder&#x3D;&quot;i.e. 9,10,11&quot; type&#x3D;&quot;text&quot; id&#x3D;&quot;GetDiagnosisSymptomIDs&quot; name&#x3D;&quot;GetDiagnosisSymptomIDs&quot;
+        value&#x3D;&quot;147,15623&quot;&gt; --&gt;
+
+        id: &lt;input type&#x3D;&quot;text&quot; [(ngModel)]&#x3D;&quot;id&quot; name&#x3D;&quot;id&quot;&gt;
+        gender: &lt;input type&#x3D;&quot;string&quot; [(ngModel)]&#x3D;&quot;gender&quot; name&#x3D;&quot;gender&quot;&gt;
+        age: &lt;input type&#x3D;&quot;number&quot; [(ngModel)]&#x3D;&quot;age&quot; name&#x3D;&quot;age&quot;&gt; 
+
+        &lt;div id&#x3D;&quot;row&quot;&gt; 
+          &lt;div id&#x3D;&quot;col&quot;&gt;
+            &lt;button id&#x3D;&quot;myButton&quot; class&#x3D;&quot;btn btn-success&quot; (click)&#x3D;&quot;getDiagnoses()&quot;&gt;Get diagnoses!&lt;/button&gt;
+          &lt;/div&gt;
+          &lt;div id&#x3D;&quot;col&quot;&gt;
+            &lt;button id&#x3D;&quot;saveButton&quot; class&#x3D;&quot;btn btn-danger&quot; (click)&#x3D;&quot;saveDiagnosis()&quot;&gt;Save diagnoses&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+      &lt;div *ngIf&#x3D;&quot;isClicked&quot;&gt;
+        &lt;div *ngFor&#x3D;&#x27;let diagnose of diagnoses&#x27;&gt;
+          &lt;br&gt;
+          &lt;p&gt;Issue Id: {{diagnose.Issue.ID}}&lt;p&gt;
+          &lt;p&gt;Issue Name: {{diagnose.Issue.Name}}&lt;/p&gt;
+          &lt;p&gt;Issue Accuracy: {{diagnose.Issue.Accuracy}}&lt;p&gt;
+          &lt;p&gt;Issue Icd: {{diagnose.Issue.Icd}}&lt;/p&gt;
+          &lt;p&gt;Issue IcdName: {{diagnose.Issue.IcdName}}&lt;p&gt;
+          &lt;p&gt;Issue Professional Name: {{diagnose.Issue.ProfName}}&lt;/p&gt;
+          &lt;p&gt;Issue Ranking: {{diagnose.Issue.Ranking}}&lt;/p&gt;
+          &lt;div *ngFor&#x3D;&#x27;let i of diagnose.Specialisation&#x27;&gt;
+            &lt;p&gt;Spec Id: {{i.ID}}&lt;p&gt;
+            &lt;p&gt;Spec Name: {{i.Name}}&lt;/p&gt;
+            &lt;p&gt;SpecialistID: {{i.SpecialistID}}&lt;p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><app-nav></app-nav><br><br><br><div class="container">  <h4>Here is a rundown of some of the issues you may be having...</h4>    <div class="jumbotron" id="diagnosis">      <!-- <input class="form-control" placeholder="i.e. 9,10,11" type="text" id="GetDiagnosisSymptomIDs" name="GetDiagnosisSymptomIDs"        value="147,15623"> -->        id: <input type="text" [(ngModel)]="id" name="id">        gender: <input type="string" [(ngModel)]="gender" name="gender">        age: <input type="number" [(ngModel)]="age" name="age">         <div id="row">           <div id="col">            <button id="myButton" class="btn btn-success" (click)="getDiagnoses()">Get diagnoses!</button>          </div>          <div id="col">            <button id="saveButton" class="btn btn-danger" (click)="saveDiagnosis()">Save diagnoses</button>          </div>        </div>      <div *ngIf="isClicked">        <div *ngFor=\'let diagnose of diagnoses\'>          <br>          <p>Issue Id: {{diagnose.Issue.ID}}<p>          <p>Issue Name: {{diagnose.Issue.Name}}</p>          <p>Issue Accuracy: {{diagnose.Issue.Accuracy}}<p>          <p>Issue Icd: {{diagnose.Issue.Icd}}</p>          <p>Issue IcdName: {{diagnose.Issue.IcdName}}<p>          <p>Issue Professional Name: {{diagnose.Issue.ProfName}}</p>          <p>Issue Ranking: {{diagnose.Issue.Ranking}}</p>          <div *ngFor=\'let i of diagnose.Specialisation\'>            <p>Spec Id: {{i.ID}}<p>            <p>Spec Name: {{i.Name}}</p>            <p>SpecialistID: {{i.SpecialistID}}<p>        </div>      </div>    </div>    </div></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BodyLocationsComponent', 'selector': 'app-body-locations'},{'name': 'DiagnosisComponent', 'selector': 'app-diagnosis'},{'name': 'HomePageComponent', 'selector': 'app-home-page'},{'name': 'IssuesComponent', 'selector': 'app-issues'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'NavComponent', 'selector': 'app-nav'},{'name': 'RedflagComponent', 'selector': 'app-redflag'},{'name': 'ReviewComponent', 'selector': 'app-review'},{'name': 'SpecialisationsComponent', 'selector': 'app-specialisations'},{'name': 'SymptomsComponent', 'selector': 'app-symptoms'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'DiagnosisComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'DiagnosisComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <script src="../js/menu-wc.js"></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

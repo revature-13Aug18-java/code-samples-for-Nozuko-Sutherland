@@ -1,0 +1,63 @@
+<app-nav></app-nav>
+<br><br><br>
+<div class="container">
+
+  <H4>Hello, thank you for choosing Salutem as your supplementary health assistant</H4>
+  <H6>Let's get started...</H6>
+
+  <!-- symptoms -->
+
+  <div class="jumbotron" id="startSymp">
+    <label for="symp">First, choose your symptom</label><br>
+    <!-- <input type="text" id="symp" class="form-control" list="json-symptomsList" placeholder="e.g. abdominal pain" (change)='getSymptoms()'> -->
+    <select id="json-symptomsList" class="form-control" (change)='saveSymptoms()'>
+      <option *ngFor='let symptom of symptoms' value={{symptom.ID}}>
+        {{symptom.Name}}
+      </option>
+    </select><br><br>
+  </div>
+
+  <!-- Permission -->
+
+  <div class="jumbotron" id="permission" hidden>
+    <p>I see...</p>
+    <p>We do need to ask you a few questions.</p>
+    <p>Nothing too personal.</p>
+    <p>Is that okay?</p>
+    <a href="#questions"></a>
+    <button id="questionButton" class="btn btn-success" (click)="loadQuestions()">Yes</button><br><br>
+  </div>
+
+  <!-- Questions -->
+
+  <div class="jumbotron" id="questions" hidden>
+    <!-- id: <input type="number" [(ngModel)]="id" name="id"> -->
+    <label>What is your Gender/Age classification?:</label>
+    <br>
+    <select [(ngModel)] ="gender">
+      <option *ngFor = "let gender of genders" [value] = "gender">
+        {{gender}}
+      </option>
+    </select>
+    <br><br>
+    <label>And your birth year?:</label>
+    <br>
+    <input type="number" [(ngModel)]="age" name="age">
+    <button id="questionButton2" class="btn btn-success" (click)="getProposedSymptoms()">Continue</button><br><br>
+  </div>
+
+  <!-- proposed symptoms -->
+
+  <div class="jumbotron" id="propSymps" hidden>
+    <h4>Maybe take a look at our proposed symptoms...</h4>
+    <div *ngFor='let proposedSymptom of proposedSymptoms'>
+      <br>
+      <!-- <p>Id: {{proposedSymptom.ID}}<p> -->
+      <p>{{proposedSymptom.Name}}</p>
+    </div>
+  </div>
+
+  <h4>Would you like to continue this self-diagnosis via body locations?</h4>
+  <button id="bodyOption" class="btn btn-success" (click)="getProposedSymptoms()" routerLink="/body-locations">Coninue to body section</button><br><br>
+
+</div>

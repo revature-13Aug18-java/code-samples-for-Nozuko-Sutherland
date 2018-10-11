@@ -1,0 +1,1216 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>angular-salutem documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">angular-salutem documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search">
+</div>
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>LoginComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/login/login.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-login</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>login.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./login.component.html</code></td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#allowAccess">allowAccess</a>
+                            </li>
+                            <li>
+                                <a href="#createPass">createPass</a>
+                            </li>
+                            <li>
+                                <a href="#createUser">createUser</a>
+                            </li>
+                            <li>
+                                <a href="#key">key</a>
+                            </li>
+                            <li>
+                                <a href="#user">user</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#checkLogin">checkLogin</a>
+                            </li>
+                            <li>
+                                <a href="#convertAccountToString">convertAccountToString</a>
+                            </li>
+                            <li>
+                                <a href="#convertToStringForStorage">convertToStringForStorage</a>
+                            </li>
+                            <li>
+                                <a href="#getTokenJSON">getTokenJSON</a>
+                            </li>
+                            <li>
+                                <a href="#grabAccount">grabAccount</a>
+                            </li>
+                            <li>
+                                <a href="#newAccount">newAccount</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#sendCreateAccount">sendCreateAccount</a>
+                            </li>
+                            <li>
+                                <a href="#sendLogin">sendLogin</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(http: <a href="https://angular.io/api/common/http/HttpClient" target="_blank">HttpClient</a>, healthResultService: <a href="../injectables/HealthResultService.html">HealthResultService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/login/login.component.ts:14</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>http</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="https://angular.io/api/common/http/HttpClient" target="_blank" >HttpClient</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>healthResultService</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="../injectables/HealthResultService.html" target="_self" >HealthResultService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+        <h3 id="methods">
+            Methods
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="checkLogin"></a>
+                        <span class="name">
+                            <b>
+                            checkLogin
+                            </b>
+                            <a href="#checkLogin"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>checkLogin()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="98" class="link-to-prism">src/app/login/login.component.ts:98</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="convertAccountToString"></a>
+                        <span class="name">
+                            <b>
+                            convertAccountToString
+                            </b>
+                            <a href="#convertAccountToString"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>convertAccountToString(account: <a href="../classes/Account.html">Account</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="89" class="link-to-prism">src/app/login/login.component.ts:89</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>account</td>
+                                                        <td>
+                                                                    <code><a href="../classes/Account.html" target="_self" >Account</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="convertToStringForStorage"></a>
+                        <span class="name">
+                            <b>
+                            convertToStringForStorage
+                            </b>
+                            <a href="#convertToStringForStorage"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>convertToStringForStorage(data: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/app/login/login.component.ts:62</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>data</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="getTokenJSON"></a>
+                        <span class="name">
+                            <b>
+                            getTokenJSON
+                            </b>
+                            <a href="#getTokenJSON"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>getTokenJSON()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="169" class="link-to-prism">src/app/login/login.component.ts:169</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="../classes/TokenForm.html" target="_self" >Observable&lt;TokenForm&gt;</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="grabAccount"></a>
+                        <span class="name">
+                            <b>
+                            grabAccount
+                            </b>
+                            <a href="#grabAccount"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>grabAccount()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/app/login/login.component.ts:50</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="../classes/Account.html" target="_self" >Observable&lt;Account&gt;</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="newAccount"></a>
+                        <span class="name">
+                            <b>
+                            newAccount
+                            </b>
+                            <a href="#newAccount"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>newAccount()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="146" class="link-to-prism">src/app/login/login.component.ts:146</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ngOnInit"></a>
+                        <span class="name">
+                            <b>
+                            ngOnInit
+                            </b>
+                            <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>ngOnInit()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/login/login.component.ts:18</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="sendCreateAccount"></a>
+                        <span class="name">
+                            <b>
+                            sendCreateAccount
+                            </b>
+                            <a href="#sendCreateAccount"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>sendCreateAccount()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/login/login.component.ts:39</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="../classes/Account.html" target="_self" >Observable&lt;Account&gt;</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="sendLogin"></a>
+                        <span class="name">
+                            <b>
+                            sendLogin
+                            </b>
+                            <a href="#sendLogin"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>sendLogin()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/login/login.component.ts:29</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code>Observable&lt;boolean&gt;</code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="allowAccess"></a>
+                        <span class="name">
+                            <b>
+                            allowAccess
+                            </b>
+                            <a href="#allowAccess"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>allowAccess:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/login/login.component.ts:27</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="createPass"></a>
+                        <span class="name">
+                            <b>
+                            createPass
+                            </b>
+                            <a href="#createPass"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>createPass:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/login/login.component.ts:25</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="createUser"></a>
+                        <span class="name">
+                            <b>
+                            createUser
+                            </b>
+                            <a href="#createUser"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>createUser:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/login/login.component.ts:24</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="key"></a>
+                        <span class="name">
+                            <b>
+                            key
+                            </b>
+                            <a href="#key"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>key:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/login/login.component.ts:23</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="user"></a>
+                        <span class="name">
+                            <b>
+                            user
+                            </b>
+                            <a href="#user"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>user:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/login/login.component.ts:22</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { Observable, throwError } from &#x27;rxjs&#x27;;
+import { HttpClient, HttpHeaders, HttpErrorResponse} from &#x27;@angular/common/http&#x27;; // do not use selenium import!
+import { HealthResultService } from &#x27;../services/health-result.service&#x27;;
+import { TokenForm } from &#x27;../token&#x27;;
+import { Account } from &#x27;../account&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+
+@Component({
+  selector: &#x27;app-login&#x27;,
+  templateUrl: &#x27;./login.component.html&#x27;,
+  styleUrls: [&#x27;./login.component.css&#x27;]
+})
+export class LoginComponent implements OnInit {
+
+  constructor(private http: HttpClient, private healthResultService: HealthResultService, private router: Router) { }
+
+  ngOnInit() {
+    localStorage.setItem(&quot;isValidLogin&quot;,&quot;false&quot;);
+  }
+
+  user: string;
+  key: string;
+  createUser: string;
+  createPass: string;
+
+  allowAccess: boolean &#x3D; false;
+
+  sendLogin(): Observable&lt;boolean&gt; {
+    let accepted &#x3D; this.http.post&lt;boolean&gt;(&#x27;http://salutem.us-east-2.elasticbeanstalk.com/accounts/login&#x27;,
+                     JSON.parse(&#x60;{&quot;username&quot;:&quot;${this.user}&quot;,&quot;key&quot;:&quot;${this.key}&quot;}&#x60;), {
+      headers: new HttpHeaders({
+        &#x27;Content-Type&#x27; : &#x27;application/json&#x27; 
+      })
+
+    }); // no error handling rn
+    return accepted;
+  }
+  sendCreateAccount(): Observable&lt;Account&gt;{
+    let accepted &#x3D; this.http.post&lt;Account&gt;(&#x27;http://salutem.us-east-2.elasticbeanstalk.com/accounts&#x27;,
+      JSON.parse(&#x60;{&quot;username&quot;:&quot;${this.createUser}&quot;,&quot;key&quot;:&quot;${this.createPass}&quot;}&#x60;), {
+        headers: new HttpHeaders({
+          &#x27;Content-Type&#x27;: &#x27;application/json&#x27;
+        })
+
+      }); // no error handling rn
+    return accepted;
+  }
+
+  grabAccount(): Observable&lt;Account&gt;{
+    let accepted &#x3D; this.http.post&lt;Account&gt;(&#x27;http://salutem.us-east-2.elasticbeanstalk.com/accounts/grab&#x27;,
+      JSON.parse(&#x60;{&quot;username&quot;:&quot;${this.user}&quot;,&quot;key&quot;:&quot;${this.key}&quot;}&#x60;), {
+        headers: new HttpHeaders({
+          &#x27;Content-Type&#x27;: &#x27;application/json&#x27;
+        })
+
+      }); // no error handling rn
+    return accepted;
+  }
+
+  // localStorage cannot hold boolean values, so convert to string
+  convertToStringForStorage(data: boolean): string {
+    if (data) {
+      this.allowAccess &#x3D; true;
+
+      // set the auth token in localStorage for session (DO THIS AFTER YOU VALIDATE THAT THEY CAN SIGN IN PROPERLY)
+      localStorage.setItem(&quot;CurrentUser&quot;, this.user);
+
+      let token: TokenForm;
+      let tokenString: string;
+
+      this.getTokenJSON()
+      .subscribe(
+        (data) &#x3D;&gt; {
+          (token &#x3D; data)
+          tokenString &#x3D; data.Token;
+          localStorage.setItem(&quot;CurrentUserToken&quot;, data.Token);
+        }
+      );
+  
+      tokenString &#x3D; localStorage.getItem(&quot;CurrentUserToken&quot;).toString();
+
+      return &quot;true&quot;;
+    } else {
+      this.allowAccess &#x3D; false;
+      return &quot;false&quot;;
+    }
+  }
+  convertAccountToString(account:Account): string{
+    
+    var thisAccount: any&#x3D;JSON.stringify(account);
+    // thisAccount.pastSymptoms.forEach(number &#x3D;&gt; {
+    // });
+    // stringAccount&#x3D;&#x60;${thisAccount.accountId}&#x60;+ thisAccount.username+thisAccount.key;
+    return thisAccount;
+  } 
+
+  checkLogin(){
+    this.sendLogin() //change this to grab account 
+    .subscribe(
+      data &#x3D;&gt; {
+        if (data) {
+          // alert(&quot;YOU SIGNED IN YAY!&quot;)
+          localStorage.setItem(&quot;isValidLogin&quot;, &quot;true&quot;);
+          var signedInAcct: any&#x3D;this.grabAccount().subscribe(account &#x3D;&gt; {
+            var thisAccount&#x3D;this.convertAccountToString(account);
+            localStorage.setItem(&quot;signedInAccount&quot;,thisAccount);
+            
+          });
+
+          let token: TokenForm;
+          let tokenString: string;
+
+          this.getTokenJSON()
+            .subscribe(
+              (data) &#x3D;&gt; {
+                (token &#x3D; data)
+                tokenString &#x3D; data.Token;
+                localStorage.setItem(&quot;Token&quot;, data.Token);
+              }
+            );
+           //try subscribing and getting info then
+          
+          //the following commands are not functioning
+          // localStorage.setItem(&quot;AccountId&quot;,signedInAcct.accountId);
+          // localStorage.setItem(&quot;AccountId&quot;, signedInAcct.username);
+          // localStorage.setItem(&quot;AccountId&quot;, signedInAcct.key);
+          
+          // localStorage.setItem(&quot;isValidLogin&quot;, this.convertToStringForStorage(data));
+          // console.log(&quot;this is the item: &quot; + localStorage.getItem(&quot;isValidLogin&quot;));
+          // localStorage.setItem(&quot;AccountName&quot;, &#x60;${this.user}&#x60;);
+          // localStorage.setItem(&quot;AcountPassword&quot;,&#x60;${this.key}&#x60;);
+          this.router.navigateByUrl(&quot;/home&quot;);
+        }
+        else {
+          alert(&quot;There is no account registered with those credentials&quot;);
+          // localStorage.setItem(&quot;isValidLogin&quot;, this.convertToStringForStorage(data));
+          // document.getElementById(&quot;incorrectUserKeyCombo&quot;).removeAttribute(&quot;hidden&quot;);
+          this.router.navigateByUrl(&quot;/login&quot;);
+          // console.log(&quot;this is the item: &quot; + localStorage.getItem(&quot;isValidLogin&quot;));
+        }
+      }
+    );
+  }
+
+newAccount(){
+  this.sendCreateAccount()
+    .subscribe(
+      data &#x3D;&gt; {
+
+        // let account: Account;
+        var account: any&#x3D;data;
+        
+        if (data) {
+        // let strAccount&#x3D;this.convertAccountToString(account);
+          // localStorage.setItem(&quot;AccountId&quot;,&#x60;${account.accountId}&#x60;)
+          // localStorage.setItem(&quot;AccountName&quot;, account.username);
+          // localStorage .setItem(&quot;AcountPassword&quot;,account.key);
+          alert(&quot;Thank you for making an account, please sign to use our service&quot;);
+          this.router.navigateByUrl(&quot;/login&quot;);
+          // localStorage.setItem(&quot;Account&quot;, strAccount);
+          
+          
+        }
+      }
+    );
+}
+
+  getTokenJSON(): Observable&lt;TokenForm&gt; {
+    let tokenTimeJSON &#x3D; this.http.post&lt;TokenForm&gt;(&#x27;https://authservice.priaid.ch/login&#x27;, null, {
+      headers: new HttpHeaders({
+        &#x27;Authorization&#x27;: &#x27;Bearer Pe8d2_GMAIL_COM_AUT:BmZ1xO4haXv5nJd/agjjgw&#x3D;&#x3D;&#x27;,// expired: Bearer Fo3a8_GMAIL_COM_AUT:/O0go1aHzJX3ZBqqHEsu3g&#x3D;&#x3D;
+        &#x27;Content-Type&#x27;: &#x27;application/json&#x27; // multipart/form-data; boundary&#x3D;----WebKitFormBoundary7MA4YWxkTrZu0gW
+      })
+    }); // no error handling rn 
+    return tokenTimeJSON;
+  }
+
+
+
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;head&gt;
+  &lt;title&gt;Login&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;form  &gt;&lt;!--add action!!!--&gt;
+	 &lt;!-- method&#x3D;&quot;post&quot; action&#x3D;&quot;/accounts/login&quot; --&gt;
+
+	&lt;div class&#x3D;&quot;login-wrap&quot;&gt;
+			&lt;div class&#x3D;&quot;login-html&quot;&gt;
+				&lt;input id&#x3D;&quot;tab-1&quot; type&#x3D;&quot;radio&quot; name&#x3D;&quot;tab&quot; class&#x3D;&quot;sign-in&quot; checked&gt;&lt;label for&#x3D;&quot;tab-1&quot; class&#x3D;&quot;tab&quot;&gt;Log In&lt;/label&gt;
+				&lt;input id&#x3D;&quot;tab-2&quot; type&#x3D;&quot;radio&quot; name&#x3D;&quot;tab&quot; class&#x3D;&quot;sign-up&quot;&gt;&lt;label for&#x3D;&quot;tab-2&quot; class&#x3D;&quot;tab&quot;&gt;Sign Up&lt;/label&gt;
+				&lt;div class&#x3D;&quot;login-form&quot;&gt;
+					&lt;div class&#x3D;&quot;sign-in-htm&quot;&gt;
+						&lt;div class&#x3D;&quot;group&quot;&gt;
+							&lt;label for&#x3D;&quot;user&quot; class&#x3D;&quot;label&quot; &gt;Username&lt;/label&gt;
+							&lt;input id&#x3D;&quot;user&quot; type&#x3D;&quot;text&quot; class&#x3D;&quot;input&quot; [(ngModel)]&#x3D;&quot;user&quot; name&#x3D;&quot;username&quot;&gt;
+						&lt;/div&gt;
+						&lt;div class&#x3D;&quot;group&quot;&gt;
+							&lt;label for&#x3D;&quot;pass&quot; class&#x3D;&quot;label&quot;&gt;Password&lt;/label&gt;
+							&lt;input id&#x3D;&quot;pass&quot; type&#x3D;&quot;password&quot; class&#x3D;&quot;input&quot; data-type&#x3D;&quot;password&quot; [(ngModel)]&#x3D;&quot;key&quot; name&#x3D;&quot;password&quot;&gt;
+						&lt;/div&gt;
+						&lt;div class&#x3D;&quot;group&quot;&gt;
+							&lt;input id&#x3D;&quot;check&quot; type&#x3D;&quot;checkbox&quot; class&#x3D;&quot;check&quot; checked&gt;
+							&lt;!-- &lt;label for&#x3D;&quot;check&quot;&gt;&lt;span class&#x3D;&quot;icon&quot;&gt;&lt;/span&gt; Keep me Signed in&lt;/label&gt; --&gt;
+						&lt;/div&gt;
+						&lt;div class&#x3D;&quot;group&quot;&gt;
+
+
+							&lt;div&gt;
+								
+							&lt;input type&#x3D;&quot;submit&quot; class&#x3D;&quot;button&quot; value&#x3D;&quot;Log In&quot; (click)&#x3D;&quot;checkLogin()&quot;&gt;
+						
+							&lt;/div&gt;
+						
+						&lt;/div&gt;
+						&lt;div class&#x3D;&quot;hr&quot;&gt;&lt;/div&gt;
+						&lt;div class&#x3D;&quot;foot-lnk&quot; id&#x3D;&quot;incorrectUserKeyCombo&quot; hidden&gt;
+							&lt;p class&#x3D;&quot;alert-danger&quot;&gt;Incorrect Username &lt;/p&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class&#x3D;&quot;sign-up-htm&quot;&gt;
+						&lt;div class&#x3D;&quot;group&quot;&gt;
+							&lt;label for&#x3D;&quot;createUser&quot; class&#x3D;&quot;label&quot;&gt;Username&lt;/label&gt;
+							&lt;input id&#x3D;&quot;createUser&quot; type&#x3D;&quot;text&quot; class&#x3D;&quot;input&quot; [(ngModel)]&#x3D;&quot;createUser&quot; name&#x3D;&quot;username&quot;&gt;
+						&lt;/div&gt;
+						&lt;div class&#x3D;&quot;group&quot;&gt;
+							&lt;label for&#x3D;&quot;createPass&quot; class&#x3D;&quot;label&quot;&gt;Password&lt;/label&gt;
+							&lt;input id&#x3D;&quot;createPass&quot; type&#x3D;&quot;password&quot; class&#x3D;&quot;input&quot; data-type&#x3D;&quot;password&quot; [(ngModel)]&#x3D;&quot;createPass&quot; name&#x3D;&quot;password&quot;&gt;
+						&lt;/div&gt;
+						&lt;div class&#x3D;&quot;group&quot;&gt;
+							&lt;label for&#x3D;&quot;repeatPass&quot; class&#x3D;&quot;label&quot;&gt;Repeat Password&lt;/label&gt;
+							&lt;input id&#x3D;&quot;repeatPass&quot; type&#x3D;&quot;password&quot; class&#x3D;&quot;input&quot; data-type&#x3D;&quot;password&quot;&gt;
+						&lt;/div&gt;
+						&lt;!-- &lt;div class&#x3D;&quot;group&quot;&gt;
+							&lt;label for&#x3D;&quot;email&quot; class&#x3D;&quot;label&quot;&gt;Email Address&lt;/label&gt;
+							&lt;input id&#x3D;&quot;email&quot; type&#x3D;&quot;text&quot; class&#x3D;&quot;input&quot;&gt;
+						&lt;/div&gt; --&gt;
+						&lt;div class&#x3D;&quot;group&quot;&gt;
+							&lt;input type&#x3D;&quot;submit&quot; class&#x3D;&quot;button&quot; value&#x3D;&quot;Sign Up&quot; (click)&#x3D;&quot;newAccount()&quot; routerLink&#x3D;&quot;/login&quot;&gt;
+						&lt;/div&gt;
+						&lt;div class&#x3D;&quot;hr&quot;&gt;&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/form&gt;
+  
+&lt;/body&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><head>  <title>Login</title></head><body><form  ><!--add action!!!-->	 <!-- method="post" action="/accounts/login" -->	<div class="login-wrap">			<div class="login-html">				<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Log In</label>				<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>				<div class="login-form">					<div class="sign-in-htm">						<div class="group">							<label for="user" class="label" >Username</label>							<input id="user" type="text" class="input" [(ngModel)]="user" name="username">						</div>						<div class="group">							<label for="pass" class="label">Password</label>							<input id="pass" type="password" class="input" data-type="password" [(ngModel)]="key" name="password">						</div>						<div class="group">							<input id="check" type="checkbox" class="check" checked>							<!-- <label for="check"><span class="icon"></span> Keep me Signed in</label> -->						</div>						<div class="group">							<div>															<input type="submit" class="button" value="Log In" (click)="checkLogin()">													</div>												</div>						<div class="hr"></div>						<div class="foot-lnk" id="incorrectUserKeyCombo" hidden>							<p class="alert-danger">Incorrect Username </p>						</div>					</div>					<div class="sign-up-htm">						<div class="group">							<label for="createUser" class="label">Username</label>							<input id="createUser" type="text" class="input" [(ngModel)]="createUser" name="username">						</div>						<div class="group">							<label for="createPass" class="label">Password</label>							<input id="createPass" type="password" class="input" data-type="password" [(ngModel)]="createPass" name="password">						</div>						<div class="group">							<label for="repeatPass" class="label">Repeat Password</label>							<input id="repeatPass" type="password" class="input" data-type="password">						</div>						<!-- <div class="group">							<label for="email" class="label">Email Address</label>							<input id="email" type="text" class="input">						</div> -->						<div class="group">							<input type="submit" class="button" value="Sign Up" (click)="newAccount()" routerLink="/login">						</div>						<div class="hr"></div>					</div>					</div>				</div>		</div>	</form>  </body></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BodyLocationsComponent', 'selector': 'app-body-locations'},{'name': 'DiagnosisComponent', 'selector': 'app-diagnosis'},{'name': 'HomePageComponent', 'selector': 'app-home-page'},{'name': 'IssuesComponent', 'selector': 'app-issues'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'NavComponent', 'selector': 'app-nav'},{'name': 'RedflagComponent', 'selector': 'app-redflag'},{'name': 'ReviewComponent', 'selector': 'app-review'},{'name': 'SpecialisationsComponent', 'selector': 'app-specialisations'},{'name': 'SymptomsComponent', 'selector': 'app-symptoms'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'LoginComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'LoginComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <script src="../js/menu-wc.js"></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

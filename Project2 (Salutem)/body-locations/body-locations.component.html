@@ -1,0 +1,118 @@
+<app-nav></app-nav>
+<br><br>
+<div class="container">
+
+  <H3>Hello! Thank you for choosing Salutem to be your supplementary health assistant.</H3>
+  <H5>Let's get started.</H5><br><br>
+
+  <!-- Body Main Locations -->
+
+  <div class="jumbotron">
+    <h5>
+    <label for="symp">First, choose the location of your ailment</label><br>
+  </h5>
+    <!-- <label>Gender/Age group:</label>
+      <br>
+      <select [(ngModel)] ="gender">
+        <option *ngFor = "let gender of genders" [value] = "gender">
+          {{gender}}
+        </option>
+      </select>
+      <br><br> -->
+
+    <select id="bodyLocationSelector" class="form-control" (change)="getBodyLocations()">
+      <option value="choose">Choose a body region</option>
+      <option *ngFor='let bodyLocation of bodyLocations' value={{bodyLocation.ID}}>
+        {{bodyLocation.Name}}
+      </option>
+    </select><br>
+
+  <!-- Body Sublocations -->
+
+    <select id="bodySubLocationSelector" class="form-control" (change)="saveSubBodyLocation()" disabled>
+      <option value="choose">Choose a body sub-region</option>
+    </select>
+  </div>
+
+  <!-- Permission -->
+
+  <div class="jumbotron" id="permission" hidden>
+    <p>I see...</p>
+    <p>We do need to ask you a few questions.</p>
+    <p>Nothing too personal.</p>
+    <p>Is that okay?</p>
+    <button id="questionButton" class="btn btn-success" (click)="loadQuestions()">Yes</button><br><br>
+  </div>
+
+  <!-- Questions -->
+
+  <div class="jumbotron" id="questions" hidden>
+    <!-- id: <input type="number" [(ngModel)]="id" name="id"> -->
+    <label>What is your Gender/Age classification?:</label>
+    <br>
+    <select [(ngModel)]="gender">
+      <option *ngFor="let gender of genders" [value]="gender">
+        {{gender}}
+      </option>
+    </select>
+    <br><br>
+    <label>And your birth year?:</label>
+    <br>
+    <input type="number" [(ngModel)]="age" name="age"><br><br>
+    <button id="questionButton2" class="btn btn-success" (click)="getBodySymptoms()"> Continue</button><br><br>
+  </div>
+
+  <!-- Body Symptoms -->
+
+  <div class="jumbotron" id="bodySymptom" hidden>
+    <h5>Select from the options your body symptom...</h5><br>
+    <!-- <div *ngIf="isClicked"> -->
+    <select id="bodySymptomSelector" class="form-control" (change)="saveBodySymptoms()">
+      <option *ngFor='let bodySymptom of bodySymptoms' value="{{bodySymptom.ID}}">
+        <br>
+        <!-- <p>Id: {{bodySymptom.ID}}<p> -->
+        {{bodySymptom.Name}}
+        <!-- <p>HasRedFlag: {{bodySymptom.HasRedFlag}}<p> -->
+        <!-- <p>HealthSymptomLocationIDs: {{bodySymptom.HealthSymptomLocationIDs}}</p> -->
+        <!-- <p>ProfName: {{bodySymptom.ProfName}}<p> -->
+        <!-- Synonyms: {{bodySymptom.Synonyms}} -->
+        <!-- too long -->
+      </option>
+    </select>
+  </div>
+
+  <!-- Diagnosis -->
+
+  <div class="jumbotron" id="diagnosis" hidden>
+    <!-- <button id="populateDia" class="btn btn-primary" (click)="getDiagnoses()">Get Diagnoses </button> -->
+    <!-- <button id="saveDia" class="btn btn-primary" (click)="saveDiagnosis()">Here are the diagnoses, ranked in order of accuracy... </button> -->
+    <h5 id="diagnosisTitle">Here are the diagnoses, ranked in order of accuracy...</h5>
+    <div *ngIf="diaDiv">
+      <div *ngFor='let diagnose of diagnoses' id="diagnosisList">    
+        <br>
+        <!-- <p>Issue Id: {{diagnose.Issue.ID}}<p> -->
+        <p>Issue Name: {{diagnose.Issue.Name}}</p>
+        <!-- <p>Issue Icd: {{diagnose.Issue.Icd}}</p> -->
+        <!-- <p>Issue IcdName: {{diagnose.Issue.IcdName}}<p> -->
+        <p>Professional Name: {{diagnose.Issue.ProfName}}</p>
+        <p>Accuracy of diagnosis: {{diagnose.Issue.Accuracy}}%<p></p>
+        <!-- <p>Issue Ranking: {{diagnose.Issue.Ranking}}</p> -->
+        <!-- <div *ngFor='let i of diagnose.Specialisation'> -->
+          <!-- <p>Spec Id: {{i.ID}}<p> -->
+          <!-- <p>Specialist Type: {{i.Name}}</p> -->
+          <!-- <p>SpecialistID: {{i.SpecialistID}}<p> -->
+        <!-- </div> -->
+        <br>
+        <hr>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Specialists -->
+  <div class="jumbotron" id="specialist" hidden>
+    <h5 id="specialistTitle">It is highly recommended that you receive further medical advice from a medical provider.</h5>
+    <button id="getSpecialist" class="btn btn-primary" routerLink="/specialisations">Go to Specialisations!</button>
+  </div>
+
+</div>
