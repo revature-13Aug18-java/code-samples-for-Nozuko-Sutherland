@@ -6,10 +6,10 @@ RideForce, previously RideShare, is a ride coordinating application for Revature
 
 [Here is the full repo](https://github.com/revaturelabs/rideshare-map-service/tree/dev)
 
-I worked on the Map Service during the 2nd iteration. So, we primarily focused on implementing features that the first sprint was unable to complete due to some constraints: testing, logging, documentation, some refactoring, and nice-to-have functionality.
+I worked on the Map Service during the 2nd iteration of Rideforce app. So in this sprint, we primarily focused on implementing features that the first sprint was unable to complete due to some constraints: testing, logging, documentation, some refactoring, and nice-to-have functionality.
 
 Roles/Responsibilities:
-- Created documentation for the classes and methods in Maps microservice
+- Created documentation for the classes and methods in **_Maps_** microservice
 - Generated **Javadocs** to create standardized method of documentation
 - Designed **JUnit** tests for Maps microservice by utilizing **Spring Boot Test**
 - Evaluated code quality via **EclEmma** analysis tool
