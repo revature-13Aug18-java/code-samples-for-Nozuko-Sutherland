@@ -15,6 +15,8 @@ Small team full stack application designed to help users diagnose their health i
 
 ## Project3 - Rideforce
 Batch-wide full stack application designed to facilitate the transportation of employees via carpooling
+<br>
+<hr>
 
 ### Technologies used
 
