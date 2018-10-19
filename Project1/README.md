@@ -1,15 +1,20 @@
 # Project1
 
-# Salutem
+# Expense Reimbursement System - Java
 
-Salutem is a tool, designed to help users become better informed about any health-related issues they might have. Users can create an account, select the appropriate symptoms and receive a diagnosis based on the possible diseases or issues they might have. Additionally, it provides the user with the most applicable medical professional specialization, saving them time and money. It is not intended to replace a visit to a doctor but to help them learn more about their personal health.
+The Expense Reimbursement System (ERS) will manage the process of reimbursing employees for expenses incurred while on company time. All employees in the company can login and submit requests for reimbursement and view their past tickets and pending requests. Finance managers can log in and view all reimbursement requests and past history for all employees in the company. Finance managers are authorized to approve and deny requests for expense reimbursement.
 
 Technologies:
+- Servlets
+- Java
+- JavaScript
 - HTML
 - CSS
-- AJAX
+- JDBC
 - SQL
-- Java
-- Spring
-- DevOps
-- Angular
+- AJAX
+- Bootstrap
+- RDS
+- Tomcat
+- Git
+- Maven
