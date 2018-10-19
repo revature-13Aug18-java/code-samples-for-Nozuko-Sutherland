@@ -6,6 +6,16 @@ Salutem is a tool, designed to help users become better informed about any healt
 
 [Here is the full repo](https://github.com/novoa-j/Project2Repo/tree/angularFeature)
 
+Roles/Responsibilities:
+- Implemented service to handle HTTP requests and AJAX calls to API
+- Utilized the Agile methodology in a small team environment
+- Created necessary components to subscribe to Observables returned from HTTP Client
+- Used caching in order to use Bearer auth token to gain access to authorized-only medical API
+- Leveraged Angular's two-way binding by utilizing ngModel via FormsModule import
+- Utilized Angular's one-way binding functionality
+- Deployed project to AWS S3 for hosting website
+- Gained knowledge of Git workflow by using Github for version control
+
 Technologies:
 - HTML
 - CSS
