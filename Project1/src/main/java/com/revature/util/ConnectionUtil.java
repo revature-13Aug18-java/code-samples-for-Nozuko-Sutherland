@@ -20,8 +20,8 @@ public class ConnectionUtil {
 		// our string should be in format:
 		// jdbc:oracle:thin:@url:1521:ORCL
 		String url = "jdbc:oracle:thin:@[url]:1521:ORCL"; // this is endpoint from AWS
-		String username = "Nozuko"; // this username and password are what I set up on AWS...
-		String password = "harry3622"; // ...but I use in sqldeveloper
+		String username = "username"; // this username and password are what I set up on AWS...
+		String password = "password"; // ...but I use in sqldeveloper
 		if (connection == null || connection.isClosed()) {
 			// if null or closed, create new connection
 			connection = DriverManager.getConnection(url, username, password);

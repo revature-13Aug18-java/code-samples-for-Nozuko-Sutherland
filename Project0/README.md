@@ -8,5 +8,6 @@ Technologies:
 - Java
 - JDBC
 - SQL
+- log4j
 - Git
 - Maven
