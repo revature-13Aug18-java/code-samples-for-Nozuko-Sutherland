@@ -16,10 +16,19 @@ Small team full stack application designed to help users diagnose their health i
 ## Project3 - Rideforce
 Batch-wide full stack application designed to facilitate the transportation of employees via carpooling
 
-I have utilized the following technologies when creating these projects.
+### Technologies used
+
+I have utilized the following technologies/tools when creating these projects.
 - ORACLE SQL
 - Java
+- JDBC
 - Servlets
 - HTML
-- CSS
+- CSS + Bootstrap
 - Spring MVC
+- Git
+- Maven
+- Javascript
+- Angular + Typescript
+- AJAX
+
