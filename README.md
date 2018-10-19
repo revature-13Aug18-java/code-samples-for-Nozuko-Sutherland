@@ -13,7 +13,7 @@ Individual full stack application designed to assist employees in receiving reim
 Small team full stack application designed to help users diagnose their health issues (not meant to replace a medical professional)
 <br>
 
-# Prokect3 - Rideforce
+# Project3 - Rideforce
 Batch-wide full stack application designed to facilitate the transportation of employees via carpooling
 
 I have utilized the following technologies when creating these projects.
