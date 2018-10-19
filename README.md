@@ -1,4 +1,5 @@
 # code-samples-for-Nozuko-Sutherland
+<hr>
 
 # Project0 - Banking Application
 Individual application which mocks a bank designed to help users withdraw/deposit funds and view their current balance

@@ -23,5 +23,4 @@ Environment/Technologies:
 - SQL
 - Java
 - Spring
-- DevOps
 - Angular
