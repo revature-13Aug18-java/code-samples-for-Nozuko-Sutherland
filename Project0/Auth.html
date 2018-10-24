@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Auth</title>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<script src="Scripts/hmac-md5.js"></script>                        
+<script src="Scripts/enc-base64-min.js"></script>
+<script data-require="angular.js@1.2.x" src="https://code.angularjs.org/1.2.25/angular.js" data-semver="1.2.25"></script>
+<script src="https://rawgit.com/brix/crypto-js/release-3.1.2/build/rollups/md5.js"></script>
+
+</head>
+<body>
+	
+<!-- username: novoa.jon@gmail.com
+
+pass:cindy221 -->
+	
+
+<script>
+    var uri = "https://authservice.priaid.ch/login";
+    var secret_key = "Bb92Tqx5R4EkDy7r6"; // password from the site (old pw: Ci49ApTq3k5K7ZsWn)
+    var computedHash = CryptoJS.HmacMD5(uri, secret_key);
+    var computedHashString = computedHash.toString(CryptoJS.enc.Base64);
+    
+    console.log(computedHashString); // J9J5D9T+WJ5vfyrb0TIYtg==  NOT THAT ONE this one: /O0go1aHzJX3ZBqqHEsu3g==
+    console.log(computedHash); // new hash from my acct: BmZ1xO4haXv5nJd/agjjgw==
+</script>
+
+</body>
+</html>
